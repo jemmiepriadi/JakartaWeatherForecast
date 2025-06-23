@@ -35,7 +35,6 @@ public class Main {
             in.close();
 
             JSONObject json = new JSONObject(response.toString());
-            System.out.println(json);
             JSONArray list = json.getJSONArray("list");
             HashSet<String> printedDates = new HashSet<>();
             System.out.println("Weather Forecast:");
